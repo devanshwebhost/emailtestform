@@ -47,7 +47,7 @@ Message: ${message}
       subject: 'Application Received - InfyPlus Consulting',
       html: `
         <div style="font-family: Arial, sans-serif; color: #333;">
-          <img src="https://infyplus.com/assets/images/logo.png" alt="InfyPlus Consulting" style="width:150px; margin-bottom:20px; background-color: #000;" />
+          <img src="https://infyplus.com/assets/images/logo.png" alt="InfyPlus Consulting" style="width:150px; margin-bottom:20px;" />
           <h2>Hello ${name},</h2>
           <p>Thank you for applying for the <strong>${position}</strong> position at InfyPlus Consulting. We have successfully received your application and our team will review it within the next 24-48 hours.</p>
           <h3>Your Application Details:</h3>
