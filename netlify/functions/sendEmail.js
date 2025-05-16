@@ -42,21 +42,34 @@ Message: ${message}
 
     // Auto-reply email to applicant
     const mailToApplicant = {
-      from: '"InfyPlus Consulting" <infyplusconsulting@gmail.com>',
-      to: email,
-      subject: 'Thank you for your job application!',
-      html: `
-        <div style="font-family: Arial, sans-serif; color: #333;">
-          <img src="https://yourdomain.com/path-to-logo.png" alt="InfyPlus Consulting" style="width:150px; margin-bottom:20px;" />
-          <h2>Hello ${name},</h2>
-          <p>Thank you for applying for the <strong>${position}</strong> position at InfyPlus Consulting.</p>
-          <p>We have received your application and our team will review it shortly.</p>
-          <p>If you have any urgent questions, please contact us at <a href="mailto:infyplusconsulting@gmail.com">infyplusconsulting@gmail.com</a>.</p>
-          <br/>
-          <p>Best Regards,<br/>InfyPlus Consulting Team</p>
-        </div>
-      `,
-    };
+  from: '"InfyPlus Consulting" <devanshrajput032006@gmail.com>',
+  to: email,
+  subject: 'Thank you for your job application!',
+  html: `
+    <div style="font-family: Arial, sans-serif; color: #333;">
+      <img src="https://infyplus.com/assets/images/logo.png" alt="InfyPlus Consulting" style="width:150px; margin-bottom:20px;" />
+      <h2>Hello ${name},</h2>
+      <p>Thank you for reaching out to us regarding the <strong>${position}</strong> position. We have successfully received your application and our team will review it within the next 24-48 hours.</p>
+
+      <h3>Your Application Details:</h3>
+      <p>
+        <strong>Job Position:</strong> ${position} <br/>
+        <strong>Email:</strong> ${email} <br/>
+        <strong>Phone:</strong> ${phone} <br/>
+        <strong>Message:</strong> ${message}
+      </p>
+
+      <p>If your qualifications align with our requirements, we will contact you for further steps. Meanwhile, if you have any urgent inquiries, feel free to reach us at <a href="mailto:infyplusconsulting@gmail.com">infyplusconsulting@gmail.com</a>.</p>
+
+      <br/>
+      <p>Thank you for considering InfyPlus Consulting as your next career move!</p>
+
+      <br/>
+      <p>Best Regards,<br/>InfyPlus Consulting Team</p>
+    </div>
+  `,
+};
+
 
     // Send both emails in parallel
     await Promise.all([
