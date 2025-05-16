@@ -42,12 +42,12 @@ Message: ${message}
 
     // Auto-reply email to applicant
     const mailToApplicant = {
-  from: '"InfyPlus Consulting" <devanshrajput032006@gmail.com>',
+  from: '"InfyPlus Consulting" <infyplusconsulting@gmail.com>',
   to: email,
   subject: 'Thank you for your job application!',
   html: `
     <div style="font-family: Arial, sans-serif; color: #333;">
-      <img src="https://infyplus.com/assets/images/logo.png" alt="InfyPlus Consulting" style="width:150px; margin-bottom:20px;" />
+      <img src="https://infyplus.com/assets/images/logo.png" alt="InfyPlus Consulting" style="width:150px; margin-bottom:20px; padding:10px; background-color:#000;" />
       <h2>Hello ${name},</h2>
       <p>Thank you for reaching out to us regarding the <strong>${position}</strong> position. We have successfully received your application and our team will review it within the next 24-48 hours.</p>
 
@@ -62,10 +62,10 @@ Message: ${message}
       <p>If your qualifications align with our requirements, we will contact you for further steps. Meanwhile, if you have any urgent inquiries, feel free to reach us at <a href="mailto:infyplusconsulting@gmail.com">infyplusconsulting@gmail.com</a>.</p>
 
       <br/>
-      <p>Thank you for considering InfyPlus Consulting as your next career move!</p>
+      <p>||Thank you for considering InfyPlus Consulting as your next career move!||</p>
 
       <br/>
-      <p>Best Regards,<br/>InfyPlus Consulting Team</p>
+      <p style="text-align: center;">Best Regards,<br/>InfyPlus Consulting Team</p>
     </div>
   `,
 };
