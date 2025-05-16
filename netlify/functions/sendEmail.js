@@ -12,8 +12,8 @@ exports.handler = async function(event, context) {
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'devanshrajput032006@gmail.com',       // Your Gmail address
-        pass: 'xxiv rath uxon rjeh',          // Use Gmail app password
+        user: 'indocsmails@gmail.com',       // Your Gmail address
+        pass: 'ilel osbl lwdr yiat',          // Use Gmail app password
       },
     });
 
@@ -58,7 +58,6 @@ Message: ${message}
         <strong>Phone:</strong> ${phone} <br/>
         <strong>Message:</strong> ${message}
       </p>
-
       <p>If your qualifications align with our requirements, we will contact you for further steps. Meanwhile, if you have any urgent inquiries, feel free to reach us at <a href="mailto:infyplusconsulting@gmail.com">infyplusconsulting@gmail.com</a>.</p>
 
       <br/>
